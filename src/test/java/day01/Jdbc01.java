@@ -80,6 +80,18 @@ public class Jdbc01 {
     }
 
     @Test
+    public void factoryTable() throws SQLException {
+        connection = DriverManager.getConnection(databaseUrl,username,password);
+        statement=connection.createStatement();
+        resultSet= statement.executeQuery("select * from factory");
+
+        while (resultSet.next()){
+            System.out.println(resultSet.getInt(1)+ " " +resultSet.getDouble(4));
+        }
+    }
+
+
+    @Test
     public void creatYourOwnTable() throws SQLException {
         connection = DriverManager.getConnection(databaseUrl,username,password);
         statement=connection.createStatement();

@@ -28,6 +28,7 @@ public class Jdbc02 extends Hooks {
         }
     }
 
+
     @Test
     public void numberOfTeacherTest() throws SQLException {
         resultSet = statement.executeQuery(sqLqueries.numberOfTeacherSchoolTable());
@@ -35,5 +36,6 @@ public class Jdbc02 extends Hooks {
             System.out.println(resultSet.getInt(1));
         }
     }
+
 
 }

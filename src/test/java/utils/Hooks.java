@@ -11,6 +11,7 @@ public class Hooks {
     public static Connection connection;
     public static ResultSet resultSet;
     public static String databaseUrl = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com :3306/batch11?serverTimezone=UTC";
+    // public static String databaseUrl = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com :3306/sakila?serverTimezone=UTC";
     public static String username = "root";
     public static String password = "'\"-LhCB'.%k[4S]z";
 

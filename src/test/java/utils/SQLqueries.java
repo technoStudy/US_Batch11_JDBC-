@@ -18,6 +18,22 @@ public class SQLqueries {
     }
 
 
+    public String totalNumberofFilmSakila(){
+        // this is from sakila database
+        String query = "select count(title) from film";
+        return query;
+    }
+
+   public String teacherNameSchoolTable(String name){
+        String query = "select teacher_name from school where teacher_name='"+name+"';";
+        return query;
+   }
+
+   public String factoryTableIDName(int id){
+        String query = "select material_name from factory where id="+id+";";
+        return query;
+   }
+
 
 
 

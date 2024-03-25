@@ -16,6 +16,19 @@ public class TestData {
         };
     }
 
+    @DataProvider(name="positions")
+    public Object [][] positionDataTest(){
+        return new Object[][]{
+                {"Automation Tester"},
+                {"Manual Tester"},
+                {"Developer"},
+                {"Accounter"},
+                {"Machine Learning Developer"}
+        };
+    }
+
+
+
 
 
 }

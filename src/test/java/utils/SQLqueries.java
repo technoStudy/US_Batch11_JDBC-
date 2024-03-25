@@ -40,4 +40,9 @@ public class SQLqueries {
    }
 
 
+   public String readingTableData(String tableName){
+         String query= "select * from " +tableName;
+        return query;
+   }
+
 }

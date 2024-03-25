@@ -34,7 +34,10 @@ public class SQLqueries {
         return query;
    }
 
-
+   public String listPositionDataPersonnelTable(){
+        String query = "select position from personnel where position like '%er'";
+        return query;
+   }
 
 
 }

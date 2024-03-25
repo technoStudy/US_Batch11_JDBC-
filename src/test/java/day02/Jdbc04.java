@@ -26,6 +26,7 @@ public class Jdbc04 extends Hooks {
             tableData.add(rowData);
         }
         boolean isDataExist = false;
+
         for(List<Object>rowData:tableData){
             if (rowData.contains(materialName));
             isDataExist = true;
@@ -33,4 +34,18 @@ public class Jdbc04 extends Hooks {
         }
         Assert.assertEquals(isDataExist,true);
     }
+
+
+    public static int getStringLength(String inputString) {
+        return inputString.length();
+    }
+
+    public static void main(String[] args) {
+        String inputStr = "";
+        int length = getStringLength(inputStr);
+        System.out.println("The length of the string is: " + length);
+    }
+
+
+
 }

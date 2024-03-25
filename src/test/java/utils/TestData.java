@@ -11,7 +11,8 @@ public class TestData {
                 {113,"silver"},
                 {114,"Steel"},
                 {115,"Gold"},
-                {116,"Platinum"}
+                {116,"copper"},
+
         };
     }
 

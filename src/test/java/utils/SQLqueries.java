@@ -52,9 +52,12 @@ public class SQLqueries {
 
 
    public String sumOfColumnData(String columnName,String tableName){
-        String query = "select sum"+(columnName)+ "from "+tableName;
+        String query = "select sum("+columnName+") from "+ tableName;
         return query;
    }
-
+    public String averageOfColumnData(String columnName,String tableName){
+        String query = "select avg("+columnName+") from "+ tableName;
+        return query;
+    }
 
 }

@@ -24,5 +24,20 @@ public class Jdbc08 {
     }
 
 
+    @Test
+    public void sumOfPriceInMarket(){
+        jdbcUtils.sumOfColumnInTable(344,"price","market");
+    }
 
+    @Test
+    public void sumOfAgeStudents(){
+        jdbcUtils.sumOfColumnInTable(980,"age","students");
+
+    }
+
+
+    @Test
+    public void averageOfStudentsAge(){
+        jdbcUtils.averageColumnInTable(57,"age","students");
+    }
 }

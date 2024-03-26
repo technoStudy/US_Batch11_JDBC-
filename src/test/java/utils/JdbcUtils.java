@@ -69,7 +69,7 @@ public class JdbcUtils extends Hooks {
 
 
     // If we need to verify the sum of an int,double column in a table
-    public void sumOfColumnInTable(String expectedData,String columnName, String tableName){
+    public void sumOfColumnInTable(int expectedData,String columnName, String tableName){
         int actualPrice = 0;
         try {
             connection = DriverManager.getConnection(databaseUrl, username, password);
@@ -84,6 +84,26 @@ public class JdbcUtils extends Hooks {
         }
         Assert.assertEquals(actualPrice,expectedData );
     }
+
+
+    // If you want to verify average of a column
+    public void averageColumnInTable(int expectedAVG,String columnName, String tableName){
+        int actualPrice = 0;
+        try {
+            connection = DriverManager.getConnection(databaseUrl, username, password);
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(sqLqueries.averageOfColumnData(columnName,tableName));
+            if (resultSet.next()) {
+                actualPrice = resultSet.getInt(1);
+                System.out.println(actualPrice);
+            }
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        Assert.assertEquals(actualPrice,expectedAVG );
+    }
+
+
 
 
 }

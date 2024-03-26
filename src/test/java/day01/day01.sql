@@ -10,3 +10,4 @@ select teacher_name from school where teacher_name='Aslanbek';
 
 select * from personnel where position like '%er'
 
+select name from workers;

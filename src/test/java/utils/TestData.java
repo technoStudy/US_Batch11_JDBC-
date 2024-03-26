@@ -27,8 +27,39 @@ public class TestData {
         };
     }
 
+    @DataProvider(name="customerName")
+    public Object [][] customerDataTest(){
+        return new Object[][]{
+                {"John Doe"},
+                {"Jane Smith"},
+                {"Emily Jones"},
+                {"Michael Brown"},
+                {"Jessica Davis"},
+                {"William Wilson"},
+                {"Olivia Martinez"},
+                {"Henry Taylor"},
+                {"Sophia Anderson"},
+                {"Isabella Thomas"}
+        };
+    }
 
-
+    @DataProvider(name="workersName")
+    public Object [][] workersNameDataTest(){
+        return new Object[][]{
+                {"Aliye"},
+                {"Hanna"},
+                {"Tetiana"},
+                {"Hamza"},
+                {"Sahin"},
+                {"Aziza"},
+                {"Mehmet"},
+                {"Khalid"},
+                {"Samet"},
+                {"Aslanbek"},
+                {"Polina"},
+                {"Vafa"}
+        };
+    }
 
 
 }

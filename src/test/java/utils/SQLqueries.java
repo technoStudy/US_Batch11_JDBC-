@@ -45,4 +45,16 @@ public class SQLqueries {
         return query;
    }
 
+   public String readingDataFromColumnInTable(String columnName,String tableName){
+        String query = "select "+columnName+" from "+tableName;
+        return query;
+   }
+
+
+   public String sumOfColumnData(String columnName,String tableName){
+        String query = "select sum"+(columnName)+ "from "+tableName;
+        return query;
+   }
+
+
 }
